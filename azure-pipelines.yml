@@ -30,6 +30,6 @@ steps:
     configuration: '01_kubernetes_aks'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
-    azureSubscriptionEndpointForSecrets: 'Towards-AzurePortal'
-    azureContainerRegistry: 'mylabacr13.azurecr.io'
+    azureSubscriptionEndpointForSecrets: '1OctAzure'
+    azureContainerRegistry: 'divcontainer.azurecr.io'
     forceUpdate: false
