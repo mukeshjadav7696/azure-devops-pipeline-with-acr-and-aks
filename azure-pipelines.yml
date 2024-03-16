@@ -8,7 +8,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: '1OctAzure'
+    azureSubscription: 'Visual Studio Enterprise (87d509da-5a3b-47a9-b42c-cc01dd0cb9e7)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
@@ -30,6 +30,6 @@ steps:
     configuration: '01_kubernetes_aks'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
-    azureSubscriptionEndpointForSecrets: '1OctAzure'
+    azureSubscriptionEndpointForSecrets: 'Visual Studio Enterprise (87d509da-5a3b-47a9-b42c-cc01dd0cb9e7)'
     azureContainerRegistry: 'divcontainer.azurecr.io'
     forceUpdate: false
