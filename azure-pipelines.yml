@@ -22,8 +22,8 @@ steps:
   inputs:
     connectionType: 'Azure Resource Manager'
     azureSubscriptionEndpoint: 'Visual Studio Enterprise (87d509da-5a3b-47a9-b42c-cc01dd0cb9e7)'
-    azureResourceGroup: 'aksdemo'
-    kubernetesCluster: 'test121'
+    azureResourceGroup: 'DivDevOps'
+    kubernetesCluster: 'dev343'
     namespace: 'default'
     command: 'apply'
     useConfigurationFile: true
