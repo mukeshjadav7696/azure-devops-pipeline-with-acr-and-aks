@@ -12,18 +12,18 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      docker build -t divcontainer.azurecr.io/web-game:tag 2048-game
-      az acr login -n divcontainer
-      docker push divcontainer.azurecr.io/web-game:tag
+      docker build -t wecuacr.azurecr.io/web-game:tag 2048-game
+      az acr login -n wecuacr
+      docker push wecuacr.azurecr.io/web-game:tag
 
 - script: cat 01_kubernetes_aks/app-deploy.yaml
 
 - task: Kubernetes@1
   inputs:
     connectionType: 'Azure Resource Manager'
-    azureSubscriptionEndpoint: 'Visual Studio Enterprise (87d509da-5a3b-47a9-b42c-cc01dd0cb9e7)'
-    azureResourceGroup: 'DivDevOps'
-    kubernetesCluster: 'dev066aks'
+    azureSubscriptionEndpoint: 'Free Trial (599f0668-9af5-4833-ab22-b0f9650590eb)'
+    azureResourceGroup: 'weu-rg'
+    kubernetesCluster: 'weu-k8s-cluster'
     namespace: 'default'
     command: 'apply'
     useConfigurationFile: true
