@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: web-game
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: web-game
