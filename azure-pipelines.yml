@@ -8,7 +8,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Visual Studio Enterprise (87d509da-5a3b-47a9-b42c-cc01dd0cb9e7)'
+    azureSubscription: 'Free Trial (599f0668-9af5-4833-ab22-b0f9650590eb)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
