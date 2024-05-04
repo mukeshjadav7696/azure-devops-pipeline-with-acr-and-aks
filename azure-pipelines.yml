@@ -30,6 +30,6 @@ steps:
     configuration: '01_kubernetes_aks'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
-    azureSubscriptionEndpointForSecrets: 'Visual Studio Enterprise (87d509da-5a3b-47a9-b42c-cc01dd0cb9e7)'
-    azureContainerRegistry: 'divcontainer.azurecr.io'
+    azureSubscriptionEndpointForSecrets: 'Free Trial(1)(599f0668-9af5-4833-ab22-b0f9650590eb)'
+    azureContainerRegistry: 'wecuacr.azurecr.io'
     forceUpdate: false
