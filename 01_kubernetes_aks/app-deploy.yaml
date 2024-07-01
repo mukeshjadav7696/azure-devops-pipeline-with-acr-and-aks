@@ -21,7 +21,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: web-game
-        image: weu24.azurecr.io/mukeshjadav7696/azure-devops-pipeline-with-acr-and-aks:177
+        image: weu24.azurecr.io/mukeshjadav7696/azure-devops-pipeline-with-acr-and-aks:184
         ports:
         - containerPort: 80
         resources:
