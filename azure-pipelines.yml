@@ -23,7 +23,7 @@ steps:
     connectionType: 'Azure Resource Manager'
     azureSubscriptionEndpoint: 'HarshadAllwin1'
     azureResourceGroup: 'weu-rg'
-    kubernetesCluster: 'weu-k8s-cluster'
+    kubernetesCluster: 'weu-aksk8s'
     namespace: 'default'
     command: 'apply'
     useConfigurationFile: true
