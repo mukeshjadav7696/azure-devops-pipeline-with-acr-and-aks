@@ -8,20 +8,20 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Free Trial (599f0668-9af5-4833-ab22-b0f9650590eb)'
+    azureSubscription: 'HarshadAllwin1'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      docker build -t wecuacr.azurecr.io/web-game:tag 2048-game
-      az acr login -n wecuacr
-      docker push wecuacr.azurecr.io/web-game:tag
+      docker build -t weu24.azurecr.io/web-game:tag 2048-game
+      az acr login -n weu24
+      docker push weu24.azurecr.io/web-game:tag
 
 - script: cat 01_kubernetes_aks/app-deploy.yaml
 
 - task: Kubernetes@1
   inputs:
     connectionType: 'Azure Resource Manager'
-    azureSubscriptionEndpoint: 'Free Trial (599f0668-9af5-4833-ab22-b0f9650590eb)'
+    azureSubscriptionEndpoint: 'HarshadAllwin1'
     azureResourceGroup: 'weu-rg'
     kubernetesCluster: 'weu-k8s-cluster'
     namespace: 'default'
@@ -30,6 +30,6 @@ steps:
     configuration: '01_kubernetes_aks'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
-    azureSubscriptionEndpointForSecrets: 'Free Trial(1)(599f0668-9af5-4833-ab22-b0f9650590eb)'
-    azureContainerRegistry: 'wecuacr.azurecr.io'
+    azureSubscriptionEndpointForSecrets: 'HarshadAllwin1'
+    azureContainerRegistry: 'weu24.azurecr.io'
     forceUpdate: false
